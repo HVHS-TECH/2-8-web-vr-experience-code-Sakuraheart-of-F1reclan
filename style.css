@@ -1,1 +1,10 @@
 /*This is the styling page for Iriomote Story*/
+.links {
+    display:flex;
+    flex-direction:column;
+    margin-left:40vw;
+}
+
+#titleimg {
+/*align this to the center*/
+}
