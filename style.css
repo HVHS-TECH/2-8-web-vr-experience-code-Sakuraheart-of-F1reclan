@@ -7,4 +7,31 @@
 
 #titleimg {
 /*align this to the center*/
+margin:auto;
+display:block;
+}
+
+#play {
+    position:relative;
+    left:20px;
+}
+
+#controls {
+    position:relative;
+    left:40px;
+}
+
+#credits {
+    position:relative;
+    left:60px;
+}
+
+#info {
+    position:relative;
+    left: 80px;
+}
+
+.textpage {
+    display:flex;
+    margin-left:50vw;
 }
