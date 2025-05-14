@@ -6,7 +6,6 @@
 }
 
 #titleimg {
-/*align this to the center*/
 margin:auto;
 display:block;
 }
@@ -33,5 +32,9 @@ display:block;
 
 .textpage {
     display:flex;
-    margin-left:50vw;
+    flex-direction:row;
+    margin-left:40vw;
+    font-family: 'Belisa plumilla manual';
+    font-weight: normal;
+    font-style: normal;
 }
