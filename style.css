@@ -30,11 +30,17 @@ display:block;
     left: 80px;
 }
 
-.textpage {
+/*.textpage {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     margin-left:40vw;
     font-family: 'Belisa plumilla manual';
     font-weight: normal;
     font-style: normal;
+}*/
+
+.textpage {
+    display:flex;
+    flex-direction:column;
+    margin-left:40vw;
 }
