@@ -8,6 +8,12 @@
 #titleimg {
 margin:auto;
 display:block;
+animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #play {
@@ -44,6 +50,11 @@ display:block;
     flex-direction:column;
     margin-left: 40vw;
     font-family: "Belisa plumilla manual", sans-serif;
+    
+}
+
+.landing {
+    background-image: url(images/sitebg.png);
 }
 
 @font-face {
@@ -52,4 +63,28 @@ display:block;
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
