@@ -12,3 +12,14 @@ AFRAME.registerComponent('color-toggle',
         }
     }
 )
+
+AFRAME.registerComponent('target-marker', {
+    init: function() {
+        let target = this.target;
+
+        this.addMarker = function(e) {
+            let p = e.detail.intersection;
+            let scene = document
+        }
+    }
+})

@@ -88,3 +88,7 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+#home {
+  background-image: url(images/titlebg.png)
+}
