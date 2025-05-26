@@ -3,6 +3,8 @@
     display:flex;
     flex-direction:column;
     margin-left:40vw;
+    font-size:x-large;
+    font-family: "Belisa plumilla manual", sans-serif;
 }
 
 #titleimg {
@@ -66,21 +68,23 @@ animation: fadeIn 5s;
 }
 
 a:link {
-  color: green;
+  color: rgb(230, 81, 48);
   background-color: transparent;
   text-decoration: none;
+  font-style:bold;
 }
 
 a:visited {
-  color: pink;
+  color: rgb(218, 248, 255);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: rgb(16, 101, 141);
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: wavy underline;
+  text-decoration-thickness:1px;
 }
 
 a:active {
@@ -89,6 +93,10 @@ a:active {
   text-decoration: underline;
 }
 
-#home {
-  background-image: url(images/titlebg.png)
+.home {
+  background-image: url(images/titlebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
 }
