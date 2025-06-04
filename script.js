@@ -23,3 +23,30 @@ AFRAME.registerComponent('target-marker', {
         }
     }
 })
+
+/*Cat animations*/
+
+AFRAME.registerComponent('run-animation', {
+
+  init: function () {
+    let hidingSpot = ((Math.random()*10)+' '+(Math.random()*10)+' '+(Math.random()*10))
+
+    this.el.addEventListener('loaded', () => {
+
+      this.el.setAttribute('animation', {
+
+        property: 'position',
+
+        to: hidingSpot,
+
+        loop: false,
+
+        dur: 1000
+
+      });
+
+    });
+
+  }
+
+});

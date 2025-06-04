@@ -13,16 +13,22 @@
     <meta charset="UTF-8"/>
     <link hrf="style.css" rel="stylesheet" type="text.css" />
     <title>IRIOMOTE STORY</title>
+    <link rel="icon" href="images/faviconpaw.png" type="image/png" sizes="16x16">
     </head>
     
     <body>
         <a-scene cursor="rayOrigin: mouse">
             <a-box color="red" position="0 1 -2" color-toggle></a-box>
+            <!-- <a-sky src="images/skysphere.png"></a-sky> -->
             <a-entity id="rig">
             <a-entity camera.position="0 2 0" wasd-controls acceleration="3" look-controls>
             <a-cursor id="cursor" raycaster></a-cursor>
             </a-entity>
             </a-entity>
+            <!-- cat-->
+             <a-entity id="yamaneko">
+                <a-torus position="5 1 5" run-animation></a-torus>
+             </a-entity>
             <!-- <a-gltf-model src="" position="0 0.2 -4"></a-gltf-model> -->
             <a-plane id="sea" shadow="receive: true" position="0 0 0" src="images/seawater.jpg" repeat="12 12 12 " scale="60 60 60" rotation="-90 0 0"></a-plane>
         </a-scene>
