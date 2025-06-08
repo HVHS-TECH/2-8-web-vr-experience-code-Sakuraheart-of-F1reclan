@@ -30,6 +30,7 @@ AFRAME.registerComponent('run-animation', {
 
   init: function () {
     let hidingSpot = ((Math.random()*10)+' '+(Math.random()*10)+' '+(Math.random()*10))
+    const myTimeout = setTimeout(run-animation, 5000);
 
     this.el.addEventListener('loaded', () => {
 
