@@ -75,6 +75,14 @@ width: 50%;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Meow regular';
+    src: url('Meoww-Regular.ttf') format('tff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 .a-loader-title {
   font-family:'Belisa plumilla manual';
 }
