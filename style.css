@@ -6,10 +6,6 @@
     font-family: "Belisa plumilla manual", sans-serif;
 }
 
-.textLinks {
-  font-size: 50px;
-}
-
 #titleimg {
 margin:auto;
 display:block;
@@ -26,21 +22,25 @@ width: 50%;
 #play {
     position:relative;
     left:20px;
+    font-size:50px;
 }
 
 #controls {
     position:relative;
     left:40px;
+    font-size:50px;
 }
 
 #credits {
     position:relative;
     left:60px;
+    font-size:50px;
 }
 
 #info {
     position:relative;
     left: 80px;
+    font-size:50px;
 }
 
 /*.textpage {
@@ -76,11 +76,23 @@ width: 50%;
 }
 
 @font-face {
-    font-family: 'Meow regular';
-    src: url('Meoww-Regular.ttf') format('tff');
-    font-weight: bold;
-    font-style: normal;
+    font-family: Meow;
+    src: url('Meoww-Regular.ttf');
     font-display: swap;
+}
+
+@font-face {
+  font-family: eureka;
+  src: url('eureka_regular.ttf');
+  font-display: swap;
+}
+
+.meowlink {
+  font-family: eureka;
+}
+
+a .meowlink:hover {
+  font-size:45px;
 }
 
 .a-loader-title {
@@ -89,7 +101,7 @@ width: 50%;
 
 a:link {
   text-shadow: 0px 0px 3px rgb(16, 43, 61);
-  color: rgb(227, 253, 255);
+  color: rgb(155, 212, 238);
   background-color: transparent;
   text-decoration: none;
   font-style:bold;
@@ -128,7 +140,6 @@ a:hover {
   flex-direction:row;
   color:rgb(218, 248, 255);
   font-size:x-large;
-  font-family:'Belisa plumilla manual';
 }
 
 ul {
