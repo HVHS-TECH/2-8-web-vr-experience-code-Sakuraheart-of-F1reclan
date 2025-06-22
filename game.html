@@ -6,7 +6,6 @@
     <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
     <!-- A-frame extras-->
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-    
     <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
     
     <script src="script.js"></script>
@@ -18,18 +17,21 @@
     
     <body>
         <a-scene class="a-loader-title" loading-screen="dotsColor: #b7d5ec; backgroundColor: rgb(51,104,120)" cursor="rayOrigin: mouse">
-            <a-sound src="url(audio/maou_bgm_healing17.mp3)" autoplay="true" loop="true" volume="0.5"></a-sound>
+            <!--light and shade-->
+            <a-light type="ambient" intensity="1" color="rgb(33, 107, 128)"></a-light>
+            <a-light type="directional" rotation="0 45 30" position="0 5 -8" color="rgb(255, 242, 179)"></a-light>
+            <a-sound refDistance="20" rolloffactor="0.5" src="url(audio/maou_bgm_healing17.mp3)" autoplay="true" loop="true" volume="0.4"></a-sound>
             <a-box color="red" position="0 1 -2" color-toggle></a-box>
+            <a-cylinder src="images/sand.jpg" repeat="2 2 1" position="0 0 0" scale="8 0.1 8"></a-cylinder>
             <!-- <a-sky src="images/skysphere.png"></a-sky> -->
             <a-entity id="rig">
             <a-entity camera.position="0 2 0" wasd-controls acceleration="3" look-controls>
             <a-cursor id="cursor" raycaster></a-cursor>
             </a-entity>
             </a-entity>
+            <a-gltf-model src="models/rock_boulder_game_ready_asset.glb" scale="0.03, 0.03, 0.03" position="-7, 0.2 -5"></a-gltf-model>
             <!-- cat-->
-             <a-entity id="yamaneko">
-                <a-gltf-model href="models/manul.glb" position="5 1 5" run-animation></a-gltf-model>
-             </a-entity>
+                <a-gltf-model src="models/manul.glb" scale="0.4, 0.4, 0.4" run-animation find-cat></a-gltf-model>
             <!-- <a-gltf-model src="" position="0 0.2 -4"></a-gltf-model> -->
             <a-plane id="sea" shadow="receive: true" position="0 0 0" src="images/seawater.jpg" repeat="12 12 12 " scale="60 60 60" rotation="-90 0 0"></a-plane>
         </a-scene>
